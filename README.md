@@ -1,4 +1,4 @@
-# C# Logger Library - Flexible Logging for .NET Applications
+# C# Logger Library for .NET | File and Database Logging Made Easy
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
