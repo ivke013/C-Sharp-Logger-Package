@@ -6,6 +6,8 @@ A lightweight and extensible C# Logger Library designed for .NET applications. T
 
 ## Features
 
+![Features](https://github.com/ivke013/C-Sharp-Logger-Package/raw/main/features.png)
+
 - **File Logging**: Log messages to text files for easy debugging.
 - **Database Logging**: Store logs in SQL Server and MySQL databases.
 - **Extensibility**: Add custom log providers to support other storage mechanisms.
@@ -151,6 +153,34 @@ public class CompositeLogger : ILogger
 
     // Implement other ILogger methods similarly
 }
+```
+
+## Database Table Structure
+
+To use database logging, ensure the following table exists in your database:
+
+### SQL Server Table
+
+```sql
+CREATE TABLE Logs (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Timestamp DATETIME NOT NULL,
+    Level NVARCHAR(50) NOT NULL,
+    Message NVARCHAR(MAX) NOT NULL,
+    Exception NVARCHAR(MAX) NULL
+);
+```
+
+### MySQL Table
+
+```sql
+CREATE TABLE Logs (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Timestamp DATETIME NOT NULL,
+    Level VARCHAR(50) NOT NULL,
+    Message TEXT NOT NULL,
+    Exception TEXT NULL
+);
 ```
 
 ## Extensibility
