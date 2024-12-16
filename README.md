@@ -1,12 +1,9 @@
 # C# Logger Library for .NET | File and Database Logging Made Easy
 
-![C# Logger Library](https://github.com/ivke013/C-Sharp-Logger-Package/raw/main/logo.png)
 
 A lightweight and extensible C# Logger Library designed for .NET applications. This library supports file and database logging for SQL Server and MySQL out of the box and can be easily extended to support other database systems. Perfect for developers who need a flexible, reliable, and scalable logging solution.
 
 ## Features
-
-![Features](https://github.com/ivke013/C-Sharp-Logger-Package/raw/main/features.png)
 
 - **File Logging**: Log messages to text files for easy debugging.
 - **Database Logging**: Store logs in SQL Server and MySQL databases.
